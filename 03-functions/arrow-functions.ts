@@ -1,0 +1,5 @@
+let greet = (name:string): void=> {
+    console.log(`Hello ${name}`)
+}
+
+greet("Homo Sapiens")
