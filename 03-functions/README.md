@@ -136,6 +136,35 @@ Overloads help TypeScript understand how the function behaves depending on the i
 
 ---
 
+## Callback Functions
+
+A callback function is a function that is passed as an argument to another function and executed later.
+
+Callbacks are commonly used when one function needs to perform an action after another function completes its work.
+
+Example:
+```
+function greet(name: string, callback: (message: string) => void): void {
+    const message = `Hello ${name}`
+    callback(message)
+}
+function printMessage(message: string): void {
+    console.log(message)
+}
+greet("Homo Sapiens", printMessage)
+```
+In this example:
+
+* `printMessage` is the callback function.
+* It is passed to `greet` as an argument.
+* `greet` executes the callback after creating the message.
+
+Callbacks are widely used in JavaScript and TypeScript, especially in:
+
+* asynchronous programming
+* event handling
+* array methods like `map`, `filter`, and `forEach`.
+
 ## Summary
 
 Functions in TypeScript provide:
