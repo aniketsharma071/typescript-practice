@@ -8,10 +8,10 @@ function combine(a: number | string, b: number | string) {
         return a+b
 
     }  
-    else{
-        return `Invalid arguments`
-    }
+
+    throw new Error("This should never happen based on overloads");
 }
 
 console.log(combine(2, 3))
 console.log(combine("Hello ","World"))
+// console.log(combine(2, "World"));  // TypeScript Error: No overload matches this call.
