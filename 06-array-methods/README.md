@@ -121,13 +121,14 @@ This example:
 
 ## Summary
 
-Common array methods include:
+Common array methods in TypeScript include:
 
-* `forEach()` → executes a function for each element
-* `map()` → transforms elements into a new array
-* `filter()` → selects elements based on a condition
-* `reduce()` → combines elements into a single value
+* `forEach()` → executes a function for each element in the array
+* `map()` → transforms each element and returns a new array
+* `filter()` → returns a new array containing elements that match a condition
+* `reduce()` → processes all elements and combines them into a single result
+* `Method Chaining` → allows multiple array operations to be linked together in a clean and readable way
 
-`Note:` `map`, `filter`, and `reduce` do not change the original array; they create a new one.
+`Note:` Methods like `map`, `filter`, and `reduce` do **not modify the original array**; they return a new array instead.
 
-These methods are widely used in modern JavaScript and TypeScript to process collections of data efficiently.
+These methods are widely used in modern JavaScript and TypeScript to efficiently process and transform collections of data.
