@@ -112,9 +112,6 @@ let netBalance = [...income, ...expense].reduce((acc, val) => acc + val, 0)
 ## Key takeaways from these exercises:
 
 * **Method Chaining** → Linking `.filter()` and `.map()` allows for clean, readable data pipelines.
-
 * **Immutability** → Using methods like `map` and `filter` ensures the original data remains unchanged.
-
 * **Data Aggregation** → The `.reduce()` method is a powerful tool for turning an entire array into a single, useful value (like a total or a summary object).
-
 * **Logical Structuring** → Organizing logic into reusable functions with explicit type annotations makes the code safer and easier to debug.
